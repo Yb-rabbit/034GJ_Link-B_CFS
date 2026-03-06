@@ -50,6 +50,9 @@ public class PlayerRespawn : MonoBehaviour
         {
             controller.enabled = false;
         }
+        // 关闭鼠标显示
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
         // 执行位置重置
         if (respawnPoint != null)
