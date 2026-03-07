@@ -383,6 +383,7 @@ MonoBehaviour:
   defaultPosition: {x: 0, y: 1, z: 0}
   respawnKey: 114
   fallLimitY: -10
+  respawnSound: {fileID: 8300000, guid: 8d810e0349e29834b904f52b738294db, type: 3}
 --- !u!114 &843211423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1471,7 +1472,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 193
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 68e693e168991e649afb99baf76fe7c6, type: 2}
   m_TargetDisplay: 0

@@ -16,6 +16,9 @@ public class PlayerRespawn : MonoBehaviour
     [Tooltip("低于此高度视为掉落出地图")]
     public float fallLimitY = -10f;
 
+    [Header("音效设置")]
+    public AudioClip respawnSound;
+
     private CharacterController controller;
 
     void Start()
@@ -70,5 +73,12 @@ public class PlayerRespawn : MonoBehaviour
             controller.enabled = true;
         }
         //Debug.Log("玩家已重生！");
+
+        // 重生音频播放
+        if (respawnSound != null)
+        {
+            AudioSource.PlayClipAtPoint(respawnSound, transform.position);
+        }
+
     }
 }
