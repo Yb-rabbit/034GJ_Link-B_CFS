@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueLines:
   - text: "\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: 5ec9ff61d094984449d8cb15c723d0b6, type: 3}
-    nextLineIndex: 1
   - text: "\u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: 5ec9ff61d094984449d8cb15c723d0b6, type: 3}
-    nextLineIndex: 2
+  - text: "\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 5ec9ff61d094984449d8cb15c723d0b6, type: 3}
