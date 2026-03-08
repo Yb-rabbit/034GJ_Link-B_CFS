@@ -17,7 +17,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 3fad417e3e2ae67468c94b156218170e, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  - text: "\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
+  - text: "\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: 6317f01463d0818479d448e349de0273, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: bb6017ad9e5703d4b82b341c70e9a787, type: 3}
