@@ -59,7 +59,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        Debug.Log("对话结束");
+        //Debug.Log("对话结束");
         // 关闭UI或重置
         gameObject.SetActive(false); 
         // 或者如果你想让 NPC_Dialogue 控制关闭，这里可以留空或发事件
