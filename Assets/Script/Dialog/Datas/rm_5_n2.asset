@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6c885d4dbb6124fab951276d220488, type: 3}
+  m_Name: rm_5_n2
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - text: "\u25A0\u25A0  \u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 43d001b958fb66f40a1c0ac9d0f25ef1, type: 3}
+  - text: "\u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0  \u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: b4b4746281657244ea0824688c407655, type: 3}
+  - text: "\u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0  \u25A0"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0\u25A0\u25A0  \u25A0  \u25A0  \u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0\u25A0  \u25A0"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0   \u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: ee00fd2e55d4d1e478212889a807b069, type: 3}
+  - text: "\u25A0\u25A0\u25A0\u25A0   \u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: acf6bc80c76de0a49b6164937f715b6a, type: 3}
+  - text: "\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 4c63cf122f604e64381a0d6fcfe583bf, type: 3}
+  - text: "\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0  \u25A0  \u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: de802f188a014a047a04706b9cc42b23, type: 3}
+  - text: "\u25A0\u25A0  \u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0  \u25A0  \u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 8c28b15891b6ca24f9723aadcb0376af, type: 3}
