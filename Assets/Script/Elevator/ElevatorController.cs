@@ -28,7 +28,7 @@ public class ElevatorController : MonoBehaviour
             if (Vector3.Distance(transform.position, target.position) < 0.01f)
             {
                 isMoving = false;
-                Debug.Log("电梯已到达");
+                //Debug.Log("电梯已到达");
                 // 可以在这里添加到达音效或开门逻辑
             }
         }
