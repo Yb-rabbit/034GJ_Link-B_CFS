@@ -8749,7 +8749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 0}
   safeDistance: 0.2
-  moveSpeed: 2.8
+  moveSpeed: 5
   turnSpeed: 5
   breathMode: 0
   breathSpeed: 1

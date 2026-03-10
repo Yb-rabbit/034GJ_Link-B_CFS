@@ -10,6 +10,7 @@ public class ElevatorController : MonoBehaviour
     private bool isMoving = false;
     private bool goingToB = true; // true=去B点, false=回A点
 
+
     void Update()
     {
         if (isMoving)
@@ -55,5 +56,13 @@ public class ElevatorController : MonoBehaviour
         }
 
         isMoving = true;
+    }
+
+    // 运行后返回初始位置
+    public void ResetElevator()
+    {
+        isMoving = false;
+        goingToB = true; // 重置为默认状态
+        transform.position = pointA.position; // 直接设置位置
     }
 }

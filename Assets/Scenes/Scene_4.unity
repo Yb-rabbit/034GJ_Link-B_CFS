@@ -2117,7 +2117,7 @@ MonoBehaviour:
   redLight: {fileID: 880315349}
   yellowLight: {fileID: 78472296}
   greenLight: {fileID: 760940970}
-  redDuration: 10
+  redDuration: 8
   yellowDuration: 3
   greenDuration: 15
   isRed: 0
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   redLight: {fileID: 1835192269}
   yellowLight: {fileID: 1513548115}
   greenLight: {fileID: 932818302}
-  redDuration: 10
+  redDuration: 8
   yellowDuration: 3
   greenDuration: 15
   isRed: 0
@@ -17233,7 +17233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 0}
   safeDistance: 0.2
-  moveSpeed: 4
+  moveSpeed: 10
   turnSpeed: 5
   breathMode: 0
   breathSpeed: 1
