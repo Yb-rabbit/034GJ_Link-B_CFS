@@ -12728,7 +12728,6 @@ GameObject:
   - component: {fileID: 1888223656}
   - component: {fileID: 1888223659}
   - component: {fileID: 1888223658}
-  - component: {fileID: 1888223660}
   m_Layer: 0
   m_Name: Camera2
   m_TagString: Untagged
@@ -12832,19 +12831,6 @@ MonoBehaviour:
   estimateViewFrustum: 1
   setNearClipPlane: 1
   nearClipDistanceOffset: -0.01
---- !u!114 &1888223660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888223654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d50403a25bca544b841a22495d1c6fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.15
 --- !u!1 &1929532961
 GameObject:
   m_ObjectHideFlags: 0
