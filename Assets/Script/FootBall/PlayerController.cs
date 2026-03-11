@@ -4,9 +4,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("移动设置")]
-    public float moveSpeed = 8f;           // 移动速度
-    public float turnSpeed = 10f;          // 旋转平滑度
-    public float sprintMultiplier = 1.5f;  // 冲刺倍率
+    public float moveSpeed = 8f; // 移动速度
+    public float turnSpeed = 10f; // 旋转平滑度
+    public float sprintMultiplier = 1.5f; // 冲刺倍率
+
+    [Header("x-z平面边界设置")]
+    public float boundaryMinX = -10f; // x轴最小边界
+    public float boundaryMaxX = 10f;  // x轴最大边界
+    public float boundaryMinZ = -10f; // z轴最小边界
+    public float boundaryMaxZ = 10f;  // z轴最大边界
+
+    [Header("传送设置")]
+    public Vector3 respawnPosition = new Vector3(0, 5, 0); // 传送目标位置（如平台中心）
 
     private Rigidbody rb;
     private Vector3 moveInput;
@@ -15,12 +24,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
         // 冻结旋转，防止方块摔倒
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        
         // 自动获取场景里的主摄像机
-        // 前提：你的 Main Camera 标签必须是 "MainCamera"
         mainCamera = Camera.main;
     }
 
@@ -30,7 +36,6 @@ public class PlayerController : MonoBehaviour
         if (mainCamera == null)
         {
             mainCamera = Camera.main;
-            // 如果还是空，就停止这一帧的逻辑
             if (mainCamera == null) return;
         }
 
@@ -38,18 +43,13 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        // 2. 【核心】计算相对于摄像机的移动方向
-        // 获取摄像机的正前方和正右方向量
+        // 2. 计算相对于摄像机的移动方向
         Vector3 camForward = mainCamera.transform.forward;
         Vector3 camRight = mainCamera.transform.right;
-
-        // 把 Y 轴归零，确保我们在平面上移动（摄像机如果是俯视的，forward 会有向下的分量）
         camForward.y = 0;
         camRight.y = 0;
-        camForward.Normalize(); // 重新计算长度为1，保证速度一致
+        camForward.Normalize();
         camRight.Normalize();
-
-        // 最终的移动方向 = 摄像机前方 * 前后键 + 摄像机右方 * 左右键
         moveInput = (camForward * v + camRight * h).normalized;
 
         // 3. 角色旋转（只有有输入时才转，防止归零报错）
@@ -58,6 +58,13 @@ public class PlayerController : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(moveInput);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
         }
+
+        // 【核心】x-z平面边界检测：超出范围时传送
+        if (transform.position.x < boundaryMinX || transform.position.x > boundaryMaxX ||
+            transform.position.z < boundaryMinZ || transform.position.z > boundaryMaxZ)
+        {
+            RespawnPlayer();
+        }
     }
 
     void FixedUpdate()
@@ -65,18 +72,23 @@ public class PlayerController : MonoBehaviour
         // 4. 物理移动
         bool isSprinting = Input.GetKey(KeyCode.LeftShift);
         float currentSpeed = isSprinting ? moveSpeed * sprintMultiplier : moveSpeed;
-
-        // 使用 MovePosition 进行物理移动，推人手感更好
         if (moveInput != Vector3.zero)
         {
             rb.MovePosition(rb.position + moveInput * currentSpeed * Time.fixedDeltaTime);
         }
     }
 
-    // 【新增】当脚本被禁用时（也就是按Tab切换队伍，TeamManager把你关掉时）
+    // 传送玩家到指定位置
+    void RespawnPlayer()
+    {
+        transform.position = respawnPosition; // 设置位置
+        rb.velocity = Vector3.zero; // 重置速度，防止继续移动
+        rb.angularVelocity = Vector3.zero; // 重置角速度
+    }
+
+    // 当脚本被禁用时（按Tab切换队伍时）
     void OnDisable()
     {
-        // 清空输入，并让刚体瞬间停止
         moveInput = Vector3.zero;
         if (rb != null)
         {

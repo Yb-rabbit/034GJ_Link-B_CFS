@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipA: {fileID: 8300000, guid: b6e324b3817366340bd6bcce4c21c313, type: 3}
-  audioClipB: {fileID: 8300000, guid: 80790e90abebb5841b707530ff215b94, type: 3}
+  audioClipB: {fileID: 8300000, guid: c9a83bcb41a6097438adccb6ef61b642, type: 3}
 --- !u!1 &42738109
 GameObject:
   m_ObjectHideFlags: 0
@@ -6529,7 +6529,7 @@ MonoBehaviour:
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
