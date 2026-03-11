@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // 1. 获取键盘输入
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
 
         // 2. 计算相对于摄像机的移动方向
         Vector3 camForward = mainCamera.transform.forward;

@@ -493,6 +493,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 442232278}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &36254012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1109,7 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.2, y: 0.37, z: 0.3}
+  Damping: {x: 0.6, y: 0.37, z: 0.6}
   ShoulderOffset: {x: 0.46, y: 0.7, z: -3.92}
   VerticalArmLength: 0.4
   CameraSide: 1
@@ -2841,9 +2853,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 2100027406}
-  safeDistance: 10
+  safeDistance: 12
   moveSpeed: 3
   turnSpeed: 5
+  verticalSmoothTime: 0.03
   breathMode: 0
   breathSpeed: 4
   floatMinAmplitude: 0.1
@@ -2867,7 +2880,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5604,6 +5617,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 442232278}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &996269480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6068,6 +6093,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 442232278}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &1121294846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6406,6 +6443,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 442232278}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &1146046633
 BoxCollider:
@@ -10091,7 +10140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 120835728}
   pointB: {fileID: 136611647}
-  speed: 6
+  speed: 4
 --- !u!65 &1636302224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12768,12 +12817,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 260680453}
   safeDistance: 0.2
-  moveSpeed: 6
+  moveSpeed: 10
   turnSpeed: 5
+  verticalSmoothTime: 0.3
   breathMode: 0
   breathSpeed: 1
   floatMinAmplitude: 0.1
-  floatMaxAmplitude: 0.2
+  floatMaxAmplitude: 0.12
   scaleMinAmplitude: 0.1
   scaleMaxAmplitude: 0.2
 --- !u!114 &2100027401

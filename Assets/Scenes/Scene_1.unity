@@ -8557,11 +8557,11 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 1
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
-    m_Time: 2
+    m_Time: 1
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
@@ -9292,7 +9292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.2, y: 0.37, z: 0.3}
+  Damping: {x: 0.6, y: 0.37, z: 0.6}
   ShoulderOffset: {x: 0.46, y: 0.7, z: -3.92}
   VerticalArmLength: 0.4
   CameraSide: 1
@@ -18845,12 +18845,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 843211421}
   safeDistance: 0.2
-  moveSpeed: 10
+  moveSpeed: 5
   turnSpeed: 5
   breathMode: 0
-  breathSpeed: 1
+  breathSpeed: 2
   floatMinAmplitude: 0.1
-  floatMaxAmplitude: 0.2
+  floatMaxAmplitude: 0.15
   scaleMinAmplitude: 0.1
   scaleMaxAmplitude: 0.2
 --- !u!1660057539 &9223372036854775807
