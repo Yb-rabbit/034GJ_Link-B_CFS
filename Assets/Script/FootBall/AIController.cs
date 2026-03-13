@@ -31,7 +31,7 @@ public class AIController : MonoBehaviour
         
         // 如果离球很近了，尝试调整朝向对着球门（方便射门）
         float distance = Vector3.Distance(transform.position, ball.position);
-        if (distance < 5f && targetGoal != null)
+        if (distance < 6f && targetGoal != null)
         {
             // 计算朝向球门的方向
             Vector3 lookDir = (targetGoal.position - transform.position).normalized;
