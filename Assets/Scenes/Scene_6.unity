@@ -860,13 +860,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 1121575848}
   safeDistance: 0.1
-  moveSpeed: 100
+  moveSpeed: 50
   turnSpeed: 30
   verticalSmoothTime: 0.3
   breathMode: 1
   breathSpeed: 2
-  floatMinAmplitude: 0.1
-  floatMaxAmplitude: 0.11
+  floatMinAmplitude: 0.05
+  floatMaxAmplitude: 0.08
   scaleMinAmplitude: 0.1
   scaleMaxAmplitude: 0.2
 --- !u!114 &497107941
@@ -2447,7 +2447,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 1
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
