@@ -14,18 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - text: "\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 3fad417e3e2ae67468c94b156218170e, type: 3}
+    audioClip: {fileID: 8300000, guid: 974ceb9ce2ccc604ba5d6892a763cd11, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  - text: "\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 6317f01463d0818479d448e349de0273, type: 3}
+  - text: "\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 4002846570f3134498ce4977cf56b725, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: bb6017ad9e5703d4b82b341c70e9a787, type: 3}
+    audioClip: {fileID: 8300000, guid: f9717f111e276d444ae3c7a8a73bd8a7, type: 3}
   - text: "\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  - text: "\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
+  - text: "\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: c972d74291633e7498bed26c33aab27b, type: 3}
+  - text: "\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0 \u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 3a3ad249c8009394089203774249af44, type: 3}
+  - text: "\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  - text: "\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0 \u25A0"
-    audioClip: {fileID: 8300000, guid: e78faeb3583b9ed4bb5e96ee7f4716ce, type: 3}
-  - text: "\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 6e3c0e938696c7744bcf101bfd0c1b65, type: 3}
