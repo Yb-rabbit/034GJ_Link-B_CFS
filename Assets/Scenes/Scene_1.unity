@@ -6015,8 +6015,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 24c0df2c214d7dc4cbd3bbd2b7b4fed0, type: 3}
-  m_Resource: {fileID: 8300000, guid: 24c0df2c214d7dc4cbd3bbd2b7b4fed0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 05dd6b931d2cd364c969f6e605325685, type: 3}
+  m_Resource: {fileID: 8300000, guid: 05dd6b931d2cd364c969f6e605325685, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6876,8 +6876,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  m_Resource: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7392529396857ac47a5426c237368cf9, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7392529396857ac47a5426c237368cf9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10483,8 +10483,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d560b401b83208f44a20dc274d49f537, type: 3}
-  m_Resource: {fileID: 8300000, guid: d560b401b83208f44a20dc274d49f537, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 84f435847e0903c4ab5ee437044f7f2e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 84f435847e0903c4ab5ee437044f7f2e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13693,7 +13693,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.91
+      value: 0.73
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -14532,8 +14532,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 24c0df2c214d7dc4cbd3bbd2b7b4fed0, type: 3}
-  m_Resource: {fileID: 8300000, guid: 24c0df2c214d7dc4cbd3bbd2b7b4fed0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8e0793e9066397f448ccd112e2e35b1b, type: 3}
+  m_Resource: {fileID: 8300000, guid: 8e0793e9066397f448ccd112e2e35b1b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

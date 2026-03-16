@@ -14,24 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - text: "\u25A0  \u25A0  \u25A0\u25A0\u25A0  \u25A0"
-    audioClip: {fileID: 8300000, guid: 81ebbd1ebbebbb24cb2bc1da0370c11b, type: 3}
+    audioClip: {fileID: 8300000, guid: b9a0cc2ac73ecc94db707fb89df8ad90, type: 3}
   - text: "\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
   - text: "\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
   - text: "\u25A0\u25A0\u25A0  \u25A0"
-    audioClip: {fileID: 8300000, guid: b16f03dc18e53c44ba008fa116c7dcc4, type: 3}
+    audioClip: {fileID: 8300000, guid: 9c87d3dda3743e444b1ca86c24d2d32f, type: 3}
   - text: "\u25A0  \u25A0  \u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 7b64cd84b72284c4aa49d017ee0726cf, type: 3}
+    audioClip: {fileID: 8300000, guid: aab7c57869fb1d141a0c6c5a8b5bf0a5, type: 3}
   - text: "\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
   - text: "\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
   - text: "\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: bf88095e4cf6d2a448528a7514947357, type: 3}
+    audioClip: {fileID: 8300000, guid: 6d93fd3bb71d44643ab04ace50f80eab, type: 3}
   - text: ' '
     audioClip: {fileID: 8300000, guid: 0902066c73ff66741b3430453ab78c8d, type: 3}
   - text: "\u25A0  \u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 93942c2bd7322a54ea752d82b590a363, type: 3}
+    audioClip: {fileID: 8300000, guid: 83e9d5eae57f99740b323f68a3fd788f, type: 3}
   - text: "\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: 04d8a4f8182c4224ab71b46fd46877da, type: 3}

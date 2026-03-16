@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - text: "\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 5ec9ff61d094984449d8cb15c723d0b6, type: 3}
+    audioClip: {fileID: 8300000, guid: be6802f569b45b64da7ba7a5411fe003, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  - text: "\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 5ec9ff61d094984449d8cb15c723d0b6, type: 3}
