@@ -15,21 +15,23 @@ MonoBehaviour:
   dialogueLines:
   - text: "\u25A0\u25A0  \u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: 68e693a0d2fdcf146b20213b4ca8a564, type: 3}
+  - text: "\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: a59b1f7abf6a2bc4988b3ec6447a4035, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  - text: "\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 24c0df2c214d7dc4cbd3bbd2b7b4fed0, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0\u25A0  \u25A0\u25A0  \u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
   - text: "\u25A0\u25A0\u25A0  \u25A0  \u25A0  \u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+    audioClip: {fileID: 8300000, guid: 431cfa39988f9ba4a90244c9ceaeece5, type: 3}
   - text: "\u25A0\u25A0  \u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
   - text: "\u25A0   \u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: 24c0df2c214d7dc4cbd3bbd2b7b4fed0, type: 3}
+    audioClip: {fileID: 8300000, guid: 584c50d3a0df4aa44bbd62cd8d68fba8, type: 3}
   - text: "\u25A0\u25A0\u25A0\u25A0   \u25A0\u25A0\u25A0\u25A0\u25A0\u25A0"
-    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
-  - text: "\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: 1cf18829c8cf30948811bee1b8564ca0, type: 3}
+  - text: "\u25A0\u25A0\u25A0  \u25A0\u25A0\u25A0\u25A0"
+    audioClip: {fileID: 8300000, guid: e3f4a7d6657847b4d82bfb3188c06f25, type: 3}
+  - text: "\u25A0  \u25A0  \u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
   - text: "\u25A0"
     audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}

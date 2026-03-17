@@ -13,21 +13,20 @@ public class TrafficLightController : MonoBehaviour
     public float yellowDuration = 2f;
     public float greenDuration = 5f;
 
-    [Header("当前状态")]
-    public bool isRed = true; // 外部可读，供车辆查询
+    // --- 新增部分：定义状态枚举 ---
+    public enum SignalState { Red, Yellow, Green }
+    // 这是一个公共变量，行人脚本会读取它
+    public SignalState currentState = SignalState.Red;
+    // -----------------------------
 
     private Renderer redRend, yellowRend, greenRend;
-    public Material offMaterial; // 灯光关闭时的材质（如黑色）
-    public Material onMaterial;  // 灯光开启时的材质（需在Inspector中分别赋值或通过代码改色）
 
     void Start()
     {
-        // 获取渲染器组件
         redRend = redLight.GetComponent<Renderer>();
         yellowRend = yellowLight.GetComponent<Renderer>();
         greenRend = greenLight.GetComponent<Renderer>();
 
-        // 开始信号灯循环
         StartCoroutine(LightCycle());
     }
 
@@ -36,28 +35,33 @@ public class TrafficLightController : MonoBehaviour
         while (true)
         {
             // 红灯阶段
-            SetLight("Red");
-            isRed = true;
+            SetLight(SignalState.Red); // 修改状态
             yield return new WaitForSeconds(redDuration);
 
             // 绿灯阶段
-            SetLight("Green");
-            isRed = false;
+            SetLight(SignalState.Green); // 修改状态
             yield return new WaitForSeconds(greenDuration);
 
             // 黄灯阶段
-            SetLight("Yellow");
-            isRed = false; // 黄灯通常允许通行或准备停车，这里设为非红灯
+            SetLight(SignalState.Yellow); // 修改状态
             yield return new WaitForSeconds(yellowDuration);
         }
     }
 
-    void SetLight(string state)
+    // 修改后的设置方法
+    void SetLight(SignalState state)
     {
-        // 简单的材质开关逻辑
-        // 注意：实际项目中建议使用 Material.SetColor("_EmissionColor", color) 实现发光效果
-        redRend.material.color = state == "Red" ? Color.red : Color.black;
-        yellowRend.material.color = state == "Yellow" ? Color.yellow : Color.black;
-        greenRend.material.color = state == "Green" ? Color.green : Color.black;
+        currentState = state; // 更新公共状态
+
+        // 材质颜色控制逻辑
+        redRend.material.color = state == SignalState.Red ? Color.red : Color.black;
+        yellowRend.material.color = state == SignalState.Yellow ? Color.yellow : Color.black;
+        greenRend.material.color = state == SignalState.Green ? Color.green : Color.black;
+    }
+
+    // 兼容旧代码：保留 isRed 属性
+    public bool isRed 
+    { 
+        get { return currentState == SignalState.Red; } 
     }
 }
