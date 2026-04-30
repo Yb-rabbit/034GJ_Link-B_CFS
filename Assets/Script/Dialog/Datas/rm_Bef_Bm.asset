@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6c885d4dbb6124fab951276d220488, type: 3}
+  m_Name: rm_Bef_Bm
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - text: "\u8BF7 A0001\u52303\u53F7\u8BCA\u5BA4\u2026\u2026"
+    audioClip: {fileID: 8300000, guid: 089126b9371fb364e8c0116ff2f71de7, type: 3}
+  - text: "\u201C\u6211\u8981\u53BB\u63A5\u5979\u3002\u201D"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
+  - text: "\u201C\u5979\u4E00\u5B9A\u5728\u90A3\u7B49\u6211\u3002\u201D"
+    audioClip: {fileID: 8300000, guid: d9750e081782a7549b3c80a7d42e0f22, type: 3}
