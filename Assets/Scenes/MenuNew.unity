@@ -2212,7 +2212,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 3db77bb14e6122841bba0848d4a26f7a, type: 3}
   m_Resource: {fileID: 8300000, guid: 3db77bb14e6122841bba0848d4a26f7a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.48
+  m_Volume: 0.69
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2994,7 +2994,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d7cdcdccb3d3dee4ba2d6893f3351e5f, type: 3}
   m_Resource: {fileID: 8300000, guid: d7cdcdccb3d3dee4ba2d6893f3351e5f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3362,7 +3362,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scene_1
+          m_StringArgument: Bm_Scene_1
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1459053017}
@@ -3795,7 +3795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7741\u5F00\u773C\u775B\u2026\u2026"
+  m_Text: "\u5F00\u59CB\u6E38\u620F"
 --- !u!222 &1860536639
 CanvasRenderer:
   m_ObjectHideFlags: 0
