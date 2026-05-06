@@ -47,3 +47,5 @@ MonoBehaviour:
     audioClip: {fileID: 0}
   - text: "\u7EE7\u7EED\u5F80\u524D\u8D70\u5427\u3002"
     audioClip: {fileID: 8300000, guid: 04d8a4f8182c4224ab71b46fd46877da, type: 3}
+  - text: "\u4E0D\u77E5\u9053\u8FD9\u6837\u5BF9\u6211\u6765\u8BF4\u662F\u597D\u662F\u574F\u3002"
+    audioClip: {fileID: 0}
