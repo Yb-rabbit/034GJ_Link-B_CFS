@@ -41,5 +41,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene_BlurDr.unity
     guid: 382d158a43f666f45918c15d2891072b
+  - enabled: 1
+    path: Assets/Scenes/Bm_Scene_3.unity
+    guid: c0ef6eb1560f3994e92a2c391cb2992f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

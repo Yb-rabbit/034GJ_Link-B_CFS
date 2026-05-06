@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2228,9 +2228,9 @@ MonoBehaviour:
   redLight: {fileID: 880315349}
   yellowLight: {fileID: 78472296}
   greenLight: {fileID: 760940970}
-  redDuration: 5
+  redDuration: 7
   yellowDuration: 3
-  greenDuration: 17
+  greenDuration: 20
   currentState: 0
 --- !u!114 &567006324
 MonoBehaviour:
@@ -2249,7 +2249,7 @@ MonoBehaviour:
   greenLight: {fileID: 932818302}
   redDuration: 7
   yellowDuration: 3
-  greenDuration: 15
+  greenDuration: 20
   currentState: 0
 --- !u!114 &567006325
 MonoBehaviour:
@@ -2279,6 +2279,7 @@ GameObject:
   - component: {fileID: 587849650}
   - component: {fileID: 587849651}
   - component: {fileID: 587849649}
+  - component: {fileID: 587849654}
   m_Layer: 5
   m_Name: mouseClick
   m_TagString: Untagged
@@ -2299,13 +2300,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2367,7 +2368,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587849648}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 086262d45463452478c8f15ef082a1e5, type: 3}
   m_Name: 
@@ -2401,6 +2402,28 @@ RectTransform:
   m_AnchoredPosition: {x: 216, y: -80.00001}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &587849654
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587849648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd90d43fc6dc82e46a877f30dba03d93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &606691235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8371,6 +8394,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 863502180}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 1cf6c5e0d038a16439aeecf8e6a36fd1, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &863502179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9441,6 +9476,7 @@ GameObject:
   - component: {fileID: 1131248980}
   - component: {fileID: 1131248982}
   - component: {fileID: 1131248981}
+  - component: {fileID: 1131248983}
   m_Layer: 5
   m_Name: TextPut
   m_TagString: Untagged
@@ -9500,7 +9536,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u25A0\u25A0\u25A0\u25A0"
+  m_Text: "\u201C\u6211\u505A\u4E86\u4E2A\u5669\u68A6\u2026\u2026\u201D"
 --- !u!222 &1131248982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9509,6 +9545,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131248979}
   m_CullTransparentMesh: 1
+--- !u!114 &1131248983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131248979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4601c1affdcd8242bde26e19d8088c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalDuration: 3
+  targetColor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+  fadeDuration: 0.5
 --- !u!1 &1146046631
 GameObject:
   m_ObjectHideFlags: 0
@@ -9856,6 +9907,18 @@ MonoBehaviour:
           m_StringArgument: Bm_Scene_3
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1131248981}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Graphic, UnityEngine.UI
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 0f5fd7366db9d9049adcd531d17a32bf, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1157748776
 MonoBehaviour:
   m_ObjectHideFlags: 0
