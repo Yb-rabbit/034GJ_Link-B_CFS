@@ -30,7 +30,7 @@ public class FirstPersonController : MonoBehaviour
     void Update()
     {
         HandleMovement();
-        HandleCursorToggle();
+        //HandleCursorToggle();
     }
 
     // 处理移动和重力
@@ -72,14 +72,14 @@ public class FirstPersonController : MonoBehaviour
     }
 
     // 处理 ESC 键手动切换鼠标
-    private void HandleCursorToggle()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
+    //private void HandleCursorToggle()
+    //{
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
             // 如果当前是锁定，就解锁；否则锁定
-            SetCursorState(Cursor.lockState != CursorLockMode.Locked);
-        }
-    }
+            //SetCursorState(Cursor.lockState != CursorLockMode.Locked);
+        //}
+    //}
 
     /// <summary>
     /// 公共接口：控制鼠标状态（锁定/解锁）

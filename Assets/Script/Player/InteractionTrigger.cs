@@ -11,7 +11,7 @@ public class InteractionTrigger : MonoBehaviour
     public FirstPersonController playerController;
 
     // 当有物体进入触发器时调用
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         // 检查进入的物体是否是指定目标
         if (other.gameObject == targetObject)
@@ -25,7 +25,7 @@ public class InteractionTrigger : MonoBehaviour
     }
 
     // 当有物体离开触发器时调用
-    private void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         // 检查离开的物体是否是指定目标
         if (other.gameObject == targetObject)
