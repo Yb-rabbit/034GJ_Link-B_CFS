@@ -5,7 +5,7 @@ public class PlayAudioSequence : MonoBehaviour
 {
     public AudioClip audioClipA; // 音频A
     public AudioClip audioClipB; // 音频B
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     void Start()
     {

@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClipA: {fileID: 8300000, guid: f3888241df1d3ac44819c745a0ad4bff, type: 3}
   audioClipB: {fileID: 8300000, guid: c0580470c376e6a4e88785ed62822efe, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &45029576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,6 +1742,7 @@ GameObject:
   - component: {fileID: 271523373}
   - component: {fileID: 271523372}
   - component: {fileID: 271523371}
+  - component: {fileID: 271523375}
   m_Layer: 6
   m_Name: NPC2_OpDoor
   m_TagString: Untagged
@@ -1867,6 +1869,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271523367}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &271523375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271523367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde102b8289027142b9101d1d4ac1f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTarget: {fileID: 1180618827}
+  safeDistance: 8
+  moveSpeed: 1
+  turnSpeed: 5
+  verticalSmoothTime: 0.3
+  breathMode: 0
+  breathSpeed: 1
+  floatMinAmplitude: 0.1
+  floatMaxAmplitude: 0.3
+  scaleMinAmplitude: 0.1
+  scaleMaxAmplitude: 0.3
 --- !u!1 &283391323
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,7 +6556,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201C\u4E0D\u662F\u770B\u4E0D\u6E05\u4E16\u754C\uFF0C\u800C\u662F\u65E0\u6CD5\u51C6\u786E\u7406\u89E3\u4E16\u754C\u5728\u5411\u81EA\u5DF1\u4F20\u9012\u4EC0\u4E48\u201D"
+  m_Text: "\u201C\u4E0D\u662F\u770B\u4E0D\u6E05\u4E16\u754C\uFF0C\u800C\u662F\u2026\u2026\u201D"
 --- !u!222 &984657398
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7714,7 +7739,7 @@ GameObject:
   - component: {fileID: 1180618828}
   m_Layer: 0
   m_Name: NPC2_talk1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17323,6 +17348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClipA: {fileID: 8300000, guid: b6e324b3817366340bd6bcce4c21c313, type: 3}
   audioClipB: {fileID: 8300000, guid: c9a83bcb41a6097438adccb6ef61b642, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &5499289093540393759
 MeshRenderer:
   m_ObjectHideFlags: 0
