@@ -9037,6 +9037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClipA: {fileID: 8300000, guid: 4e7e0ec4a1844494898941da06eee03f, type: 3}
   audioClipB: {fileID: 8300000, guid: d7cdcdccb3d3dee4ba2d6893f3351e5f, type: 3}
+  audioSource: {fileID: 0}
 --- !u!4 &867156830
 Transform:
   m_ObjectHideFlags: 0
@@ -14501,7 +14502,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7B2C\u2161\u5E55\uFF1A\u4ECE\u524D"
+  m_Text: "\u7B2C\u2161\u5E55\uFF1A\u5BF9\u9762"
 --- !u!222 &1780719291
 CanvasRenderer:
   m_ObjectHideFlags: 0
