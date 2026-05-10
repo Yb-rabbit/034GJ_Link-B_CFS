@@ -15,7 +15,10 @@ public class SimpleTetris : MonoBehaviour
     public int width = 10;   
     public int height = 20;  
     public float fallSpeed = 0.8f; 
-    public float cellSize = 40f; // 新增：手动指定格子大小，用于计算面板尺寸
+    public float cellSize = 40f;
+    public AudioClip lineClearSound;
+    public AudioClip gameOverSound;
+    public Text gameOverText;
 
     private int[,] gridData;
     private Image[,] gridImages;
@@ -53,9 +56,7 @@ public class SimpleTetris : MonoBehaviour
         isGameOver = false;
         fallTimer = 0;
 
-        // ---------------------------------------------------
-        // 关键修正：强制设置 GridLayoutGroup 属性，防止自动排列导致错位
-        // ---------------------------------------------------
+
         GridLayoutGroup glg = gameBoardPanel.GetComponent<GridLayoutGroup>();
         if (glg == null) glg = gameBoardPanel.gameObject.AddComponent<GridLayoutGroup>();
 
@@ -69,25 +70,19 @@ public class SimpleTetris : MonoBehaviour
         // 强制设置面板大小，使其刚好容纳所有格子（防止面板太宽导致自动换行计算错误）
         gameBoardPanel.sizeDelta = new Vector2(width * cellSize, height * cellSize);
 
-        // ---------------------------------------------------
         // 清理旧格子
-        // ---------------------------------------------------
         foreach (Transform child in gameBoardPanel)
         {
             Destroy(child.gameObject);
         }
 
-        // ---------------------------------------------------
         // 初始化数组
-        // ---------------------------------------------------
         gridData = new int[width, height];
         gridImages = new Image[width, height];
 
-        // ---------------------------------------------------
         // 生成格子
         // 顺序：先遍历行，再遍历列 -> 对应 UI 从左上到右下的排列
         // y=0 是顶部，y=height-1 是底部
-        // ---------------------------------------------------
         for (int y = 0; y < height; y++)
         {
             for (int x = 0; x < width; x++)
@@ -96,6 +91,12 @@ public class SimpleTetris : MonoBehaviour
                 gridImages[x, y] = go.GetComponent<Image>();
                 gridData[x, y] = 0; 
             }
+        }
+
+        // 结束文本隐藏
+        if (gameOverText != null)
+        {
+            gameOverText.text = "";
         }
 
         SpawnBlock();
@@ -110,7 +111,11 @@ public class SimpleTetris : MonoBehaviour
         if (gridData[currentX, currentY] == 1)
         {
             isGameOver = true;
-            //Debug.Log("游戏结束！");
+            if (gameOverSound != null)
+            {
+                AudioSource.PlayClipAtPoint(gameOverSound, Vector3.zero);
+            }
+            gameOverText.text = "游戏结束!";
             return;
         }
 
@@ -179,6 +184,11 @@ public class SimpleTetris : MonoBehaviour
             {
                 ClearLine(y);
                 y++; // 重新检查当前行（因为上面的行落下来了）
+                if (lineClearSound != null)
+                {
+                    AudioSource.PlayClipAtPoint(lineClearSound, Vector3.zero);
+                }
+                
             }
         }
     }

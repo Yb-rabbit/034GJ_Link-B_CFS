@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe6c885d4dbb6124fab951276d220488, type: 3}
-  m_Name: rm_Bm3_03
+  m_Name: rm_Bm3_11
   m_EditorClassIdentifier: 
   dialogueLines:
-  - text: "\u90A3\u4EBA\u671D\u4F60\u7684\u53F3\u624B\u8FB9\u6307\u4E86\u8DEF\u3002"
-    audioClip: {fileID: 8300000, guid: be6802f569b45b64da7ba7a5411fe003, type: 3}
+  - text: "\u201C\u633A\u597D\u7684\uFF0C\u4EC0\u4E48\u90FD\u4E0D\u6025\u7684\u6837\u5B50\u3002\u201D"
+    audioClip: {fileID: 8300000, guid: 04d8a4f8182c4224ab71b46fd46877da, type: 3}

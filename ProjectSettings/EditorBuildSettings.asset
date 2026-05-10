@@ -44,5 +44,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bm_Scene_3.unity
     guid: c0ef6eb1560f3994e92a2c391cb2992f
+  - enabled: 1
+    path: Assets/Scenes/Bm_Scene_4.unity
+    guid: 5cd5a7863a1a5a745ab9ac39983c4fd1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
