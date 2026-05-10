@@ -53,5 +53,5 @@ MonoBehaviour:
     audioClip: {fileID: 0}
   - text: "\u5E94\u8BE5\u8D70\u54EA\u4E00\u8FB9\u5462\uFF1F"
     audioClip: {fileID: 8300000, guid: 04d8a4f8182c4224ab71b46fd46877da, type: 3}
-  - text: "(\u4E5F\u8BB8\u8FD9\u4E2A\u9ED1\u8272\u65B9\u5757\u80FD\u5E2E\u4E0A\u5FD9)"
+  - text: "(\u4E5F\u8BB8\u56DB\u5904\u8D70\u8D70\u662F\u4E2A\u597D\u4E3B\u610F)"
     audioClip: {fileID: 0}
