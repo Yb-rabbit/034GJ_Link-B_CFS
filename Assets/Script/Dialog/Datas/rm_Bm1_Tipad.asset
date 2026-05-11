@@ -17,3 +17,5 @@ MonoBehaviour:
     audioClip: {fileID: 0}
   - text: "\u8BF7\u7559\u610F\u573A\u666F\u91CC\u7684\u7F1D\u9699"
     audioClip: {fileID: 0}
+  - text: "\u5982\u9047\u5361\u6B7B\u7B49\u60C5\u51B5\uFF0C\u6309\u201CR\u201D\u952E\u8FD4\u56DE\u5B58\u6863\u70B9"
+    audioClip: {fileID: 0}

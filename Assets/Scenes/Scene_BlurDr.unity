@@ -11265,7 +11265,7 @@ MonoBehaviour:
   audioSource: {fileID: 1162683299}
   typingSpeed: 0.15
   fadeOutDuration: 1
-  autoNextDelay: 5
+  autoNextDelay: 3
 --- !u!114 &1162683301
 MonoBehaviour:
   m_ObjectHideFlags: 0
