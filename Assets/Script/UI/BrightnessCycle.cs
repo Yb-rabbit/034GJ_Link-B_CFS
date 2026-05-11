@@ -1,59 +1,59 @@
 using UnityEngine;
-using UnityEngine.UI; // Èç¹ûÊ¹ÓÃText×é¼ş
-using TMPro; // Èç¹ûÊ¹ÓÃTextMeshPro×é¼ş
+using UnityEngine.UI; // å¦‚æœä½¿ç”¨Textç»„ä»¶
+using TMPro; // å¦‚æœä½¿ç”¨TextMeshProç»„ä»¶
 
 public class BrightnessCycle : MonoBehaviour
 {
-    public Text textComponent; // Èç¹ûÊ¹ÓÃText×é¼ş
-    // public TextMeshProUGUI textComponent; // Èç¹ûÊ¹ÓÃTextMeshPro×é¼ş
+    public Text textComponent; // å¦‚æœä½¿ç”¨Textç»„ä»¶
+    // public TextMeshProUGUI textComponent; // å¦‚æœä½¿ç”¨TextMeshProç»„ä»¶
 
-    public float duration = 2.0f; // Ã÷¶È±ä»¯µÄÖÜÆÚÊ±¼ä£¨Ãë£©
+    public float duration = 2.0f; // æ˜åº¦å˜åŒ–çš„å‘¨æœŸæ—¶é—´ï¼ˆç§’ï¼‰
     private float elapsedTime = 0.0f;
 
-    private Color baseColor; // »ù´¡ÑÕÉ«
-    public float minBrightness = 0.5f; // ×îĞ¡Ã÷¶È
-    public float maxBrightness = 1.0f; // ×î´óÃ÷¶È
+    private Color baseColor; // åŸºç¡€é¢œè‰²
+    public float minBrightness = 0.5f; // æœ€å°æ˜åº¦
+    public float maxBrightness = 1.0f; // æœ€å¤§æ˜åº¦
 
-    private int baseFontSize; // »ù´¡×ÖÌå´óĞ¡
-    public int minFontSize = 20; // ×îĞ¡×ÖÌå´óĞ¡
-    public int maxFontSize = 30; // ×î´ó×ÖÌå´óĞ¡
+    private int baseFontSize; // åŸºç¡€å­—ä½“å¤§å°
+    public int minFontSize = 20; // æœ€å°å­—ä½“å¤§å°
+    public int maxFontSize = 30; // æœ€å¤§å­—ä½“å¤§å°
 
-    public bool keepCurrentFontSize = false; // ÊÇ·ñ±£³Öµ±Ç°×ÖÌå´óĞ¡
+    public bool keepCurrentFontSize = false; // æ˜¯å¦ä¿æŒå½“å‰å­—ä½“å¤§å°
 
     void Start()
     {
-        baseColor = textComponent.color; // »ñÈ¡³õÊ¼ÑÕÉ«
-        baseFontSize = textComponent.fontSize; // »ñÈ¡³õÊ¼×ÖÌå´óĞ¡
+        baseColor = textComponent.color; // è·å–åˆå§‹é¢œè‰²
+        baseFontSize = textComponent.fontSize; // è·å–åˆå§‹å­—ä½“å¤§å°
     }
 
     void Update()
     {
         elapsedTime += Time.deltaTime;
 
-        // ¼ÆËãµ±Ç°Ã÷¶È
+        // è®¡ç®—å½“å‰æ˜åº¦
         float brightness = Mathf.Sin((elapsedTime / duration) * Mathf.PI * 2) * 0.5f + 0.5f;
 
-        // ½«Ã÷¶ÈÓ³Éäµ½×îĞ¡ºÍ×î´óÃ÷¶ÈÖ®¼ä
+        // å°†æ˜åº¦æ˜ å°„åˆ°æœ€å°å’Œæœ€å¤§æ˜åº¦ä¹‹é—´
         brightness = Mathf.Lerp(minBrightness, maxBrightness, brightness);
 
-        // ¸üĞÂÑÕÉ«
+        // æ›´æ–°é¢œè‰²
         textComponent.color = new Color(
             baseColor.r * brightness,
             baseColor.g * brightness,
             baseColor.b * brightness,
-            baseColor.a // ±£³ÖÍ¸Ã÷¶È²»±ä
+            baseColor.a // ä¿æŒé€æ˜åº¦ä¸å˜
         );
 
-        // Èç¹û²»±£³Öµ±Ç°×ÖÌå´óĞ¡£¬Ôò¸üĞÂ×ÖÌå´óĞ¡
+        // å¦‚æœä¸ä¿æŒå½“å‰å­—ä½“å¤§å°ï¼Œåˆ™æ›´æ–°å­—ä½“å¤§å°
         if (!keepCurrentFontSize)
         {
-            // ¼ÆËãµ±Ç°×ÖÌå´óĞ¡
+            // è®¡ç®—å½“å‰å­—ä½“å¤§å°
             float fontSize = Mathf.Sin((elapsedTime / duration) * Mathf.PI * 2) * 0.5f + 0.5f;
 
-            // ½«×ÖÌå´óĞ¡Ó³Éäµ½×îĞ¡ºÍ×î´ó×ÖÌå´óĞ¡Ö®¼ä
+            // å°†å­—ä½“å¤§å°æ˜ å°„åˆ°æœ€å°å’Œæœ€å¤§å­—ä½“å¤§å°ä¹‹é—´
             fontSize = Mathf.Lerp(minFontSize, maxFontSize, fontSize);
 
-            // ¸üĞÂ×ÖÌå´óĞ¡
+            // æ›´æ–°å­—ä½“å¤§å°
             textComponent.fontSize = Mathf.RoundToInt(fontSize);
         }
     }
