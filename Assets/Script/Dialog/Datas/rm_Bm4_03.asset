@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: rm_Bm4_03
   m_EditorClassIdentifier: 
   dialogueLines:
+  - text: "\u95E8\uFF0C\u603B\u7B97\u5F00\u4E86\u3002"
+    audioClip: {fileID: 8300000, guid: 584c50d3a0df4aa44bbd62cd8d68fba8, type: 3}
   - text: "\u817F\u8FD8\u5728\uFF0C\u811A\u8FD8\u5728\uFF0C\u4F46\u4ED6\u611F\u89C9\u4E0D\u5230\u5B83\u4EEC\u4E86\u3002"
     audioClip: {fileID: 0}
   - text: "\u4ED6\u542C\u89C1\u5979\u7684\u58F0\u97F3\u4E86\uFF0C\u5F88\u6E05\u695A\uFF0C\u5F88\u6E05\u695A\u3002"
@@ -21,5 +23,3 @@ MonoBehaviour:
     audioClip: {fileID: 0}
   - text: "\u4F46\u51FA\u6765\u7684\u58F0\u97F3\uFF0C\u95F7\u95F7\u7684\uFF0C\u6C89\u6C89\u7684\u3002"
     audioClip: {fileID: 0}
-  - text: "\u95E8\uFF0C\u603B\u7B97\u5F00\u4E86\u3002"
-    audioClip: {fileID: 8300000, guid: 584c50d3a0df4aa44bbd62cd8d68fba8, type: 3}
