@@ -2653,7 +2653,7 @@ MonoBehaviour:
   redLight: {fileID: 880315349}
   yellowLight: {fileID: 78472296}
   greenLight: {fileID: 760940970}
-  redDuration: 2
+  redDuration: 5
   yellowDuration: 1
   greenDuration: 24
   currentState: 0
@@ -2672,7 +2672,7 @@ MonoBehaviour:
   redLight: {fileID: 1835192269}
   yellowLight: {fileID: 1513548115}
   greenLight: {fileID: 932818302}
-  redDuration: 2
+  redDuration: 5
   yellowDuration: 1
   greenDuration: 24
   currentState: 0
@@ -11265,7 +11265,7 @@ MonoBehaviour:
   audioSource: {fileID: 1162683299}
   typingSpeed: 0.15
   fadeOutDuration: 1
-  autoNextDelay: 3
+  autoNextDelay: 2.3
 --- !u!114 &1162683301
 MonoBehaviour:
   m_ObjectHideFlags: 0
