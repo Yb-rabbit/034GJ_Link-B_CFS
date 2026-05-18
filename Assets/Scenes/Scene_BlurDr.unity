@@ -2653,9 +2653,9 @@ MonoBehaviour:
   redLight: {fileID: 880315349}
   yellowLight: {fileID: 78472296}
   greenLight: {fileID: 760940970}
-  redDuration: 5
-  yellowDuration: 1
-  greenDuration: 24
+  redDuration: 7
+  yellowDuration: 3
+  greenDuration: 15
   currentState: 0
 --- !u!114 &567006324
 MonoBehaviour:
@@ -2672,9 +2672,9 @@ MonoBehaviour:
   redLight: {fileID: 1835192269}
   yellowLight: {fileID: 1513548115}
   greenLight: {fileID: 932818302}
-  redDuration: 5
-  yellowDuration: 1
-  greenDuration: 24
+  redDuration: 7
+  yellowDuration: 3
+  greenDuration: 15
   currentState: 0
 --- !u!114 &567006325
 MonoBehaviour:
@@ -9049,13 +9049,13 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1064109}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_spatialBlend
+        m_MethodName: set_volume
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.8
+          m_FloatArgument: 0.7
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
